@@ -1,0 +1,77 @@
+/* body{
+    background-color: blue;
+} */
+
+
+.hero{
+    color: goldenrod;
+}
+
+.hero1{
+    background-image: url(/images/markus-spiske-pl_HXNkyFmw-unsplash.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+    box-sizing: border-box;
+}
+
+.hero2{
+     /* background-color: black; */
+    width: 417px;
+    display: inline-block;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: -6px -6px 9px #fff, 11px 11px 21px -8px #000;
+}
+
+.hero2 input {
+    width: 93%;
+    height: 45px;
+    margin: 8px;
+    border-radius: 20px;
+    font-size: 34px;
+    text-align: end;
+    border: 0;
+    outline: 0;
+    background-color: #e9e9e9;
+    box-shadow: -5px -7px 9px #fff inset, 5px 11px 17px -13px #000 inset;
+}
+
+button {
+    background-color: grey;
+    border-radius: 50px;
+    font-size: 28px;
+    font-weight: 500;
+    width: 60px;
+    height: 60px;
+    margin: 8px;
+    border: 0;
+    box-shadow: -6px -6px 9px #fff, 11px 11px 21px -8px #000;
+    cursor: pointer;
+    outline: 0;
+}
+
+button:hover{
+    background-color: #d6d6d6;
+}
+
+.zero {
+    width: 145px;
+}
+
+@media (max-width:500px) {
+    body {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

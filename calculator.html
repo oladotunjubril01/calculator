@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="hero1">
+        <div class="hero2">
+            <input type="text" name="interface" id="interface">
+            <div>
+                <button class="hero">AC</button>
+                <button class="hero">(</button>
+                <button class="hero">)</button>
+                <button class="hero">/</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="hero">x</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="hero">-</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="hero">+</button>
+                <button class="zero">0</button>
+                <button class="hero">.</button>
+                <button>=</button>
+            </div>
+        </div>
+    </div>
+      <script>
+        let interface = document.getElementById('interface');
+buttons = document.querySelectorAll('button');
+let interfaceValue = '';
+for (item of buttons) {
+    item.addEventListener('click', (e) => {
+        buttonText = e.target.innerText;
+        console.log('Button text is ', buttonText);
+        if (buttonText == 'x') {
+            buttonText = '*';
+            interfaceValue += buttonText;
+            interface.value = interfaceValue;
+        } else if (buttonText == 'AC') {
+            interfaceValue = "";
+            interface.value = interfaceValue;
+        } else if (buttonText == '=') {
+            interface.value = eval(interfaceValue);
+        } else {
+            interfaceValue += buttonText;
+            interface.value = interfaceValue;
+        }
+    })
+}
+      </script>
+</body>
+</html>
